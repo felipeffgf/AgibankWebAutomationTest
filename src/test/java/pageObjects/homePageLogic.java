@@ -3,7 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class HomePage {
+public class homePageLogic {
 
     private WebDriver driver;
     private String url = "https://blog.agibank.com.br/";
@@ -11,7 +11,7 @@ public class HomePage {
     private By searchIcon = By.xpath("//a[contains(@class,'astra-search-icon') and @role='button']\n");
     private By searchInput = By.xpath("//*[@id=\"search-field\"]");
 
-    public HomePage(WebDriver driver) {
+    public homePageLogic(WebDriver driver) {
         this.driver = driver;
     }
 

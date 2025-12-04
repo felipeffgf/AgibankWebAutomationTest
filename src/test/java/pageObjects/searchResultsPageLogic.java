@@ -5,13 +5,13 @@ import org.openqa.selenium.WebDriver;
 import java.util.List;
 import org.openqa.selenium.WebElement;
 
-public class SearchResultsPage {
+public class searchResultsPageLogic {
 
     private WebDriver driver;
 
     private By results = By.cssSelector("article");
 
-    public SearchResultsPage(WebDriver driver) {
+    public searchResultsPageLogic(WebDriver driver) {
         this.driver = driver;
     }
 

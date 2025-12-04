@@ -2,16 +2,16 @@ package steps;
 
 import io.cucumber.java.pt.*;
 import org.openqa.selenium.WebDriver;
-import pageObjects.HomePage;
-import pageObjects.SearchResultsPage;
+import pageObjects.homePageLogic;
+import pageObjects.searchResultsPageLogic;
 import utils.utilsWeb;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SearchSteps {
 
     WebDriver driver = utilsWeb.getDriver();
-    HomePage homePage = new HomePage(driver);
-    SearchResultsPage resultsPage = new SearchResultsPage(driver);
+    homePageLogic homePage = new homePageLogic(driver);
+    searchResultsPageLogic resultsPage = new searchResultsPageLogic(driver);
 
     @Dado("que o usuário está na homepage")
     public void usuario_esta_na_homepage() throws InterruptedException {
