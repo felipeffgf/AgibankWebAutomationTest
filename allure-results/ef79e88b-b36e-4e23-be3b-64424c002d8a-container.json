@@ -1,0 +1,33 @@
+{
+  "uuid": "ef79e88b-b36e-4e23-be3b-64424c002d8a",
+  "name": "Scenario: Busca de artigo com caracteres especiais",
+  "children": [
+    "9871973a-35d4-4f89-a0ac-bf721821820b"
+  ],
+  "befores": [
+    {
+      "name": "steps.Hooks.setup()",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1764826631208,
+      "stop": 1764826631849
+    }
+  ],
+  "afters": [
+    {
+      "name": "steps.Hooks.teardown()",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1764826635005,
+      "stop": 1764826635155
+    }
+  ],
+  "start": 1764826631208,
+  "stop": 1764826635155
+}
