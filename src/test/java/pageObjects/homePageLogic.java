@@ -5,17 +5,17 @@ import org.openqa.selenium.WebDriver;
 
 public class homePageLogic {
 
-    private WebDriver driver;
-    private String url = "https://blog.agibank.com.br/";
+    private final WebDriver driver;
 
-    private By searchIcon = By.xpath("//a[contains(@class,'astra-search-icon') and @role='button']\n");
-    private By searchInput = By.xpath("//*[@id=\"search-field\"]");
+    private final By searchIcon = By.xpath("//a[contains(@class,'astra-search-icon') and @role='button']\n");
+    private final By searchInput = By.xpath("//*[@id=\"search-field\"]");
 
     public homePageLogic(WebDriver driver) {
         this.driver = driver;
     }
 
     public void open() throws InterruptedException {
+        String url = "https://blog.agibank.com.br/";
         driver.get(url);
         Thread.sleep(2000);
     }

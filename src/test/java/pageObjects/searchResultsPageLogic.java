@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 
 public class searchResultsPageLogic {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
-    private By results = By.cssSelector("article");
+    private final By results = By.cssSelector("article");
 
     public searchResultsPageLogic(WebDriver driver) {
         this.driver = driver;
